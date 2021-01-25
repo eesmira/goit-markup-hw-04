@@ -19,22 +19,20 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header">
+   <header class="header">
       <div class="container">
-        <nav>
-          <div class="nav-wrapper">
-            <a href="./" class="logo"><span class="accent">Web</span>Studio</a>
+        <nav class="nav-wrapper">
+          <a href="./" class="logo"><span class="accent">Web</span>Studio</a>
 
-            <ul class="site-nav list">
-              <li class="list-item">
-                <a href="./index.html" class="link">Студия</a>
-              </li>
-              <li class="list-item">
-                <a href="./portfolio.html" class="link current">Портфолио</a>
-              </li>
-              <li class="list-item"><a href="" class="link">Контакты</a></li>
-            </ul>
-          </div>
+          <ul class="site-nav list">
+            <li class="list-item">
+              <a href="./index.html" class="link">Студия</a>
+            </li>
+            <li class="list-item">
+              <a href="./portfolio.html" class="link current">Портфолио</a>
+            </li>
+            <li class="list-item"><a href="" class="link">Контакты</a></li>
+          </ul>
         </nav>
 
         <ul class="contacts list">
@@ -51,9 +49,9 @@
     </header>
 
     <!-- MAIN CONTENT -->
-    <main class="main-portfolio">
-      <div class="container">
-        <section>
+    <main>
+      <section class="portfolio">
+        <div class="container">
           <h2 hidden>Фильтр работ</h2>
           <ul class="filter list">
             <li class="filter-button">
@@ -203,20 +201,22 @@
               </a>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
+
     <!-- FOOTER -->
-    <footer class="footer">
+ <footer class="footer">
       <div class="container">
         <a href="/" class="logo"><span class="accent">Web</span>Studio</a>
         <address class="footer-contacts">
           <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
-          <div class="contacts-wrapper">
-            <a href="mailto:info@example.com" class="contacts email"
+          <ul class="contacts-wrapper list">
+            <li class="footer-contact-item"><a href="mailto:info@example.com" class="contacts email"
               >info@example.com</a
-            >
-            <a href="tel:+380991111111" class="contacts">+38 099 111 11 11</a>
+            ></li>
+            <li class="footer-contact-item">
+            <a href="tel:+380991111111" class="contacts">+38 099 111 11 11</a></li>
           </div>
         </address>
       </div>

@@ -9,6 +9,7 @@
   --accent-color: #2196f3;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --header-line-color: #ececec;
+  --border-line-color: #eeeeee;
 }
 
 /* ширина контейнера 1170px */
@@ -44,6 +45,10 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.link {
+  cursor: pointer;
 }
 
 .current {
@@ -86,10 +91,6 @@ img {
   color: var(--primary-txt-color);
   text-align: center;
   margin-bottom: 50px;
-}
-
-.link {
-  cursor: pointer;
 }
 
 /* HEADER */
@@ -172,6 +173,8 @@ img {
   background-color: #2f303a;
   width: auto;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -270,7 +273,9 @@ img {
 }
 
 .team-item-content {
-  padding: 30px 58px 30px 60px;
+  padding: 30px;
+  background-color: var(--primary-bg-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team .title {
@@ -302,6 +307,8 @@ img {
   display: inline-block;
   color: var(--additional-txt-color);
   margin-bottom: 20px;
+  margin-right: 0;
+  padding: 0;
 }
 
 .footer-contacts {
@@ -319,6 +326,7 @@ img {
 }
 
 .footer .contacts {
+  display: inline-block;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -327,7 +335,7 @@ img {
   text-decoration: none;
 }
 
-.footer-contacts .email {
+.footer-contact-item > .email {
   margin-bottom: 9px;
 }
 
@@ -338,7 +346,7 @@ img {
 
 /* PORTFOLIO */
 
-.main-portfolio {
+.portfolio {
   padding: 94px 0 94px 0;
 }
 
@@ -366,7 +374,7 @@ img {
   cursor: pointer;
 }
 
-.main-portfolio .filter {
+.portfolio .filter {
   display: flex;
   justify-content: center;
 }
@@ -387,6 +395,9 @@ img {
 
 .project-content {
   padding: 20px 24px;
+  border-style: none solid solid;
+  border-width: 1px;
+  border-color: var(--border-line-color);
 }
 
 .project-item {
@@ -399,6 +410,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-txt-color);
+  margin-bottom: 4px;
 }
 
 .project-type {
@@ -407,6 +419,7 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-txt-color);
+  margin: 0;
 }
 
 .projects .link {
