@@ -144,6 +144,10 @@ img {
   display: flex;
 }
 
+.header-contact::before {
+  content: '';
+}
+
 .contacts.list {
   margin-left: auto;
 }
@@ -170,11 +174,17 @@ img {
 /* HERO */
 
 .hero {
-  background-color: #2f303a;
   width: auto;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/index-images/hero-img.jpg);
+  background-color: #c4c4c4;
 }
 
 .hero-title {
@@ -198,6 +208,7 @@ img {
   background-color: var(--accent-color);
   padding: 10px 32px;
   border: none;
+  cursor: pointer;
 }
 
 /* FEATURES */
@@ -335,13 +346,18 @@ img {
   text-decoration: none;
 }
 
-.footer-contact-item > .email {
+.footer-contact-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
 .contacts-wrapper {
   display: flex;
   flex-direction: column;
+}
+
+/* OUR CLIENTS */
+.clients-section {
+  padding: 94px 0;
 }
 
 /* PORTFOLIO */
