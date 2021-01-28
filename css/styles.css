@@ -10,6 +10,7 @@
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --header-line-color: #ececec;
   --border-line-color: #eeeeee;
+  --social-icon-color: #afb1b8;
 }
 
 /* ширина контейнера 1170px */
@@ -81,6 +82,7 @@ img {
 
 .description {
   margin: 0;
+  margin-bottom: 16px;
 }
 
 .section-title {
@@ -142,10 +144,12 @@ img {
 .header .contacts {
   margin-bottom: 0;
   display: flex;
+  align-items: center;
 }
 
-.header-contact::before {
-  content: '';
+.header-contact {
+  display: flex;
+  align-items: center;
 }
 
 .contacts.list {
@@ -171,6 +175,19 @@ img {
   color: var(--accent-color);
 }
 
+.contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+  align-self: center;
+}
+
+.contacts-icon:hover {
+  fill: var(--accent-color);
+}
+
+.contacts .list-item {
+  display: inline-flex;
+}
 /* HERO */
 
 .hero {
@@ -246,6 +263,33 @@ img {
   margin-right: 30px;
 }
 
+.features-section .list-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
 /* WHAT WE DO */
 
 .products-section {
@@ -305,6 +349,21 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-txt-color);
   text-align: center;
+}
+
+.social-links-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icon {
+  fill: var(--social-icon-color);
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  background-color: var(--accent-color);
+  fill: var(--additional-txt-color);
 }
 
 /* FOOTER */
