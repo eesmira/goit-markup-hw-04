@@ -362,11 +362,6 @@ img {
   align-items: center;
 }
 
-.social-list-item:hover {
-  background-color: var(--accent-color);
-  border-radius: 50%;
-}
-
 .social-link {
   display: flex;
   justify-content: center;
@@ -376,6 +371,8 @@ img {
 }
 
 .social-link:hover {
+  background-color: var(--accent-color);
+  border-radius: 50%;
   fill: var(--additional-txt-color);
 }
 
