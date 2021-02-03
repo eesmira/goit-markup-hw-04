@@ -17,6 +17,7 @@
 /* паддинги контейнера слева и справа равны половине ширины gutter на макете (по 15px) */
 
 body {
+  padding-top: 80px;
   font-family: 'Roboto', sans-serif;
   background-color: var(--primary-bg-color);
 }
@@ -57,16 +58,17 @@ img {
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--primary-logo-color);
   text-decoration: none;
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
 }
 
 .accent {
@@ -86,19 +88,26 @@ img {
 }
 
 .section-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-txt-color);
   text-align: center;
-  margin-bottom: 50px;
 }
 
 /* HEADER */
 
 .header {
+  position: fixed;
+  width: 100%;
+  min-height: 80px;
+  top: 0;
+
   border-bottom: 1px solid var(--header-line-color);
+  background-color: var(--primary-bg-color);
 }
 
 .header .container {
@@ -131,13 +140,12 @@ img {
   text-decoration: none;
 }
 
+.site-nav .link.current,
 .site-nav .link:hover,
 .site-nav .link:focus,
-.site-nav .link:active {
-  color: var(--accent-color);
-}
-
-.site-nav .link.current {
+.site-nav .link:active,
+.contacts .link:hover,
+.contacts .link:focus {
   color: var(--accent-color);
 }
 
@@ -160,25 +168,20 @@ img {
   margin-left: 50px;
 }
 .contacts .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-txt-color);
   text-decoration: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.contacts .link:hover,
-.contacts .link:focus {
-  color: var(--accent-color);
 }
 
 .contacts-icon {
   margin-right: 10px;
-  fill: currentColor;
   align-self: center;
+  fill: currentColor;
 }
 
 .contacts-icon:hover {
